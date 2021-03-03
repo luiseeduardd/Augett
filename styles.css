@@ -92,6 +92,7 @@
 .estrategicos {
     display: flex;
     flex-direction: row;
+    
 }
 .pilares {
     background-color: #fff;

@@ -76,30 +76,36 @@
 
 .areas h2 {
     color: #fff;
-    background-color: #0C4269;
+    height: auto;
     font-size: 32px;
     font-weight: 400;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 35px;
     padding-bottom: 50px;
+    text-decoration: overline;
 }
 .areas {
     background-color: #0C4269;
+    background-image: url(./images/pilares.jpg);
+    background-blend-mode: overlay;
     height: auto;
     justify-content: center;
 
 }
+
 .estrategicos {
     display: flex;
     flex-direction: row;
+    padding: 0 20px;
     
 }
 .pilares {
     background-color: #fff;
     border-radius: 10px;
-    margin-left: 10px;
-
+    margin: 10px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 56%);
 }
+
 
 .pilares img {
     width: 50px;
@@ -113,4 +119,158 @@
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+}
+
+.content {
+    padding: 20px 20px;
+}
+
+.servi {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.servi button {
+    color: #fff;
+    background-color: #3DB391;
+    border-radius: 15px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    height: 60px;
+    width: 180px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.56);
+    left: 50%;
+    font-family: 'Montserrat';
+    align-items: center;
+
+}
+
+.banner {
+    background-image: url(images/banner-qs.jpg);
+    background-blend-mode: multiply;
+    height: 700px;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.textos-qs {
+    display: flex;
+    padding: 80px;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.textos-qs .growth {
+    font-size: 32 px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 800;
+
+}
+
+.textos-qs p {
+    color: #fff;
+    background-color: rgba(12, 66, 105, 0.25);
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 56%);
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.proceso {
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.proceso figure {
+    justify-content: center;
+}
+
+.proceso h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    color: #0C4269;
+    text-decoration: overline;
+    text-align: center;
+}
+
+.proceso img {
+    padding-bottom: 40px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.56); ;
+   
+}
+
+.proceso button {
+    color: #fff;
+    background-color: #3DB391;
+    border-radius: 15px;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    height: 60px;
+    width: 180px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.56);
+    left: 50%;
+    font-family: 'Montserrat';
+}
+
+@media (max-width: 425px) {
+
+    .cabecera {
+        width: auto;
+
+    }
+
+    .textos-indx {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+    
+    .textos-indx h1{
+        font-size: 36px;
+    }
+    .botones {
+        display: inline;
+    }
+
+    .areas h2 {
+        font-size: 22px;
+    }
+    .estrategicos {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+
+    .banner .textos-qs {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: baseline;
+    }
+
+    .banner .textos-qs .growth {
+        font-size: 22px;
+        align-items: center;
+    }
+    
+    .banner .textos-qs p {
+        font-size: 16px;
+    }
 }
